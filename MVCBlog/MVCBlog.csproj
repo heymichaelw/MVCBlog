@@ -165,6 +165,10 @@
     <Compile Include="Migrations\201702082054341_Initial.Designer.cs">
       <DependentUpon>201702082054341_Initial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201702082124246_AddedNewPages.cs" />
+    <Compile Include="Migrations\201702082124246_AddedNewPages.Designer.cs">
+      <DependentUpon>201702082124246_AddedNewPages.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\BlogPost.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -250,6 +254,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201702082054341_Initial.resx">
       <DependentUpon>201702082054341_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702082124246_AddedNewPages.resx">
+      <DependentUpon>201702082124246_AddedNewPages.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
