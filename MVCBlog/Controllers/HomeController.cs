@@ -26,5 +26,10 @@ namespace MVCBlog.Controllers
 
             return View();
         }
+
+        public ActionResult Sample()
+        {
+            return View();
+        }
     }
 }
