@@ -18,14 +18,22 @@ namespace MVCBlog.Controllers
             return View(db.BlogPosts.ToList());
         }
 
-        [HttpPost]
+
         public ActionResult Create(BlogPost blogPost)
         {
-            blogPost.Created = DateTime.Now;
-            db.BlogPosts.Add(blogPost);
-            db.SaveChanges();
-            return RedirectToAction("Index");
+            if (Request.HttpMethod == "POST")
+            {
+                blogPost.Created = DateTime.Now;
+                db.BlogPosts.Add(blogPost);
+                db.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                return View();
+            }
         }
+        
 
         public ActionResult Details(int id)
         {

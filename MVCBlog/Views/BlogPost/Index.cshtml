@@ -13,3 +13,8 @@
         </div>
     </div>
 </header>
+
+@foreach (var blogPost in Model)
+{
+    @blogPost.Title
+}
