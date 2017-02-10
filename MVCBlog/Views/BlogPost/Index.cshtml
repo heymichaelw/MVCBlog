@@ -14,7 +14,10 @@
     </div>
 </header>
 
+<div class="container">
 @foreach (var blogPost in Model)
 {
-    @blogPost.Title
+    @Html.ActionLink((string)blogPost.Title, "Details", new { id = blogPost.Id })
+    <p>@blogPost.Teaser</p>
 }
+</div>
